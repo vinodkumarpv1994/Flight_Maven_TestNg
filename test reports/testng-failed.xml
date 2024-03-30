@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [FlightQedge Test Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="broswerName" value="Edge"/>
+  <parameter name="userPWD" value="Kumar@1994"/>
+  <parameter name="userID" value="vinodkumarpv1994@gmail.com"/>
+  <test thread-count="5" name="Book Flight Ticket(failed)">
+    <parameter name="passengerName" value="Akhil Kumar"/>
+    <parameter name="dateFly" value="01/02/1994"/>
+    <parameter name="flyFrom" value="Hyderabad"/>
+    <parameter name="flyTo" value="Kolkatha"/>
+    <classes>
+      <class name="flightQEdge.testCases.BookFlightTicket">
+        <methods>
+          <include name="bookFlyTk" invocation-numbers="0"/>
+          <include name="closeApp"/>
+          <include name="launchApp"/>
+          <include name="login"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- flightQEdge.testCases.BookFlightTicket -->
+    </classes>
+  </test> <!-- Book Flight Ticket(failed) -->
+</suite> <!-- Failed suite [FlightQedge Test Suite] -->
